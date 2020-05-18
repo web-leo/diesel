@@ -1,0 +1,78 @@
+@mixin btn {
+   background-color: $color;
+   color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid $color;
+   transition: 0.5s;
+   font-family: "Oswald";
+   &:hover {
+      background-color: transparent;
+   }
+}
+@mixin btn11 {
+   background: url(../img/icons/btn-icon.svg), $color;
+   background-repeat: no-repeat;
+   background-position: 20% 50%;
+   color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid $color;
+   transition: 0.5s;
+   font-family: "Oswald";
+   &:hover {
+      background-color: transparent;
+      color: $color;
+      background: url(../img/icons/btn-icon-hover.svg);
+      background-repeat: no-repeat;
+      background-position: 20% 50%;
+   }
+}
+@mixin btn2 {
+   background-color: transparent;
+   color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #333;
+   transition: 0.5s;
+   font-family: "Oswald";
+   &:hover {
+      background-color: #333;
+      color: $color;
+   }
+}
+@mixin btn22 {
+   background: url(../img/icons/btn-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 20% 50%;
+   color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #333;
+   transition: 0.5s;
+   font-family: "Oswald";
+   &:hover {
+      background: url(../img/icons/btn-icon-hover.svg), #333;
+      background-repeat: no-repeat;
+      background-position: 20% 50%;
+      color: $color;
+   }
+}
+@mixin btn3 {
+   background-color: transparent;
+   color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid $color;
+   transition: 0.5s;
+   font-family: "Oswald";
+   &:hover {
+      background-color: $color;
+      color: #333;
+   }
+}

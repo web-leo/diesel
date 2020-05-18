@@ -1,0 +1,58 @@
+@import "_mixins.scss";
+@import "_colors.scss";
+
+/* Specification */
+body {
+   font-family: "Oswald";
+}
+
+p {
+   font-family: "PTSans";
+   font-size: 18px;
+   line-height: 27px;
+}
+
+h2 {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 47px;
+   font-weight: 300;
+}
+
+.container {
+   width: 100%;
+   max-width: 1395px;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.container-big {
+   width: 100%;
+   max-width: 1670px;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.slick-dots li.slick-active button:before {
+   font-size: 0;
+}
+
+.slick-dots li button:before {
+   font-size: 0;
+}
+
+.slick-dotted.slick-slider {
+   margin-bottom: 0;
+}
+
+.page_title {
+   font-size: 48px;
+   font-weight: 300;
+   color: $color;
+}
+
+/* Specification End */

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_1214" data-name="Group 1214" transform="translate(-198 -4122)">
+    <path id="Icon_material-keyboard-arrow-right" data-name="Icon material-keyboard-arrow-right" d="M24,24.51l-6.87-6.885L24,10.74,21.885,8.625l-9,9,9,9Z" transform="translate(212 4136.375)" fill="#fc0"/>
+    <g id="Rectangle_1206" data-name="Rectangle 1206" transform="translate(198 4122)" fill="none" stroke="#fc0" stroke-width="1">
+      <rect width="64" height="64" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="63" height="63" rx="4.5" fill="null"/>
+    </g>
+  </g>
+</svg>
