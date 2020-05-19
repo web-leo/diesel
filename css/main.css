@@ -2832,7 +2832,7 @@ h2 {
   color: #333;
 }
 
-.pafination {
+.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2842,7 +2842,7 @@ h2 {
   margin: 50px 0;
 }
 
-.pafination a {
+.pagination a {
   margin-right: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -3580,4 +3580,561 @@ h2 {
 }
 
 /* Discounts cards end */
+/* Recommendations page */
+.recommendations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recommendations span {
+  display: block;
+  width: 100%;
+  height: 21px;
+  background-image: url(../img/pattern/pattern-for-auto-logos.png);
+  margin: 30px 0 0;
+}
+
+.recommendations_item {
+  width: 790px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 30px 0 0;
+}
+
+.recommendations_item img {
+  width: 398px;
+  height: 246px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.recommendations_item div {
+  width: 380px;
+  height: 246px;
+  position: relative;
+}
+
+.recommendations_item div h5 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.recommendations_item div p {
+  margin: 5px 0 0;
+}
+
+.recommendations_item div a {
+  background: url(../img/icons/btn-icon.svg), #fc0;
+  background-repeat: no-repeat;
+  background-position: 28% 50%;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fc0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Oswald";
+  width: 236px;
+  height: 36px;
+  border-radius: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 66px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.recommendations_item div a:hover {
+  background-color: transparent;
+  color: #fc0;
+  background: url(../img/icons/btn-icon-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 28% 50%;
+}
+
+/* Recommendations page end */
+/* Recommendation page */
+.recommendation_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommendation_page_content {
+  width: 812px;
+}
+
+.recommendation_title {
+  font-size: 47px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.recommendation_page_img {
+  width: 100%;
+  height: 536px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 35px 0 0;
+}
+
+.recommendation_page_text {
+  margin-top: 50px;
+}
+
+.recommendation_page_text p {
+  margin-bottom: 35px;
+}
+
+.recommendation_page_menu {
+  width: 400px;
+  margin: 70px 0 0;
+}
+
+.recommendation_page_menu a {
+  font-size: 29px;
+  font-weight: 300;
+  color: #000;
+  line-height: 35px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: block;
+  margin: 0 0 25px;
+}
+
+.recommendation_page_menu a:hover {
+  color: #fc0;
+}
+
+/* Recommendation page end */
+/* Map */
+#map {
+  width: 100%;
+  height: 496px;
+}
+
+/* Map end */
+/* Contacts */
+#contacts {
+  padding: 50px 0;
+}
+
+#contacts .footer_social_links a {
+  margin: 0 25px 0 0;
+}
+
+.contacts_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts_wrap p {
+  color: #333;
+}
+
+.contacts_wrap .work_time span:hover {
+  background-image: url(../img/icons/clock-black.svg);
+}
+
+.contacts_wrap .work_time:hover span {
+  background-image: url("../img/icons/clock-black.svg");
+}
+
+.contacts_wrap .work_time:hover p {
+  color: #333;
+}
+
+.contacts_wrap .address:hover a {
+  background-image: url("../img/icons/map-marker-black.svg");
+}
+
+.contacts_wrap .address p {
+  color: #333;
+}
+
+.contacts_wrap .header_tel:hover .header_tel_icon {
+  background-image: url("../img/icons/phone-black.svg");
+}
+
+.contacts_wrap .header_tel:hover .header_tel_number {
+  color: #333;
+}
+
+.contacts_wrap .header_tel .header_tel_number {
+  color: #333;
+  text-align: left;
+}
+
+.contacts_wrap .header_tel .header_tel_number span {
+  margin-left: 25px;
+}
+
+.contacts_item_title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0 0 15px 38px;
+}
+
+.contacts_form {
+  background-color: #3a3a3b;
+  border: 1px solid #707070;
+  margin: 65px 0 0;
+  padding: 50px 0 75px;
+}
+
+.contacts_form h6 {
+  color: #fc0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts_form form {
+  width: 1088px;
+  margin: 35px auto 0;
+}
+
+.contacts_form .form_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contacts_form label {
+  margin: 0 0 5px 15px;
+  display: block;
+  color: #fff;
+  opacity: .7;
+}
+
+.contacts_form input {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #c4a012;
+  border-radius: 4px;
+  padding-left: 15px;
+  margin: 0 0 8.5px;
+}
+
+.contacts_form input:last-child {
+  margin: 0;
+}
+
+.contacts_form textarea {
+  width: 674px;
+  height: 203px;
+  background-color: transparent;
+  border: 1px solid #c4a012;
+  border-radius: 4px;
+  padding: 15px;
+  color: #fff;
+}
+
+.contacts_form input[type="submit"] {
+  background: url(../img/icons/btn-icon.svg), #fc0;
+  background-repeat: no-repeat;
+  background-position: 28% 50%;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fc0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Oswald";
+  width: 261px;
+  height: 64px;
+  border-radius: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 66px auto 0;
+}
+
+.contacts_form input[type="submit"]:hover {
+  background-color: transparent;
+  color: #fc0;
+  background: url(../img/icons/btn-icon-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 28% 50%;
+}
+
+.form_box {
+  width: 398px;
+}
+
+#contacts_footer {
+  background-image: url(../img/bg/bg-contacts-footer.jpg);
+  padding: 123px 0 19px;
+}
+
+#contacts_footer .copyright {
+  color: #000;
+  opacity: .5;
+  margin: 0;
+  text-align: left;
+}
+
+#contacts_footer .footer_bottom_bg {
+  position: static;
+  background: none;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+#contacts_footer .footer_bottom_bg p {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.6;
+}
+
+#contacts_footer .footer_bottom_bg a {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.6;
+  font-family: "PTSans";
+  margin: -2px 0 0;
+  display: block;
+}
+
+#contacts_footer .footer_bottom_bg a:hover {
+  text-decoration: underline;
+}
+
+.contacts_footer_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 900px;
+}
+
+/* Contacts end */
+/* Car brand page */
+.car_brand_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 0 75px;
+}
+
+.car_brand_imgs {
+  width: 950px;
+  height: 668px;
+  position: relative;
+}
+
+.car_brand_logo {
+  width: 260px;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.car_brand_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.car_brand_list {
+  width: 420px;
+}
+
+.car_brand_list h5 {
+  font-size: 29px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.car_brand_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 380px;
+  margin: 35px 0 0;
+}
+
+.car_brand_list ul li {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: 'PTSans';
+}
+
+.car_brand_text_wrap {
+  margin: 35px auto 0;
+  width: 802px;
+}
+
+.car_brand_text_wrap p {
+  margin-bottom: 25px;
+}
+
+.car_brand_btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 802px;
+  margin: 75px auto 0;
+}
+
+.car_brand_btn_wrap a {
+  display: block;
+  width: 395px;
+  height: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.car_brand_btn_wrap a:first-child {
+  background-color: #3a3a3b;
+}
+
+.car_brand_btn_wrap a:first-child h5 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #fc0;
+  text-align: center;
+  margin: 25px 0 0;
+}
+
+.car_brand_btn_wrap a:first-child span {
+  display: block;
+  width: 91px;
+  height: 91px;
+  background-image: url(../img/repair/repair-injectors.svg);
+  background-size: cover;
+  margin: 25px auto 0;
+}
+
+.car_brand_btn_wrap a:first-child:hover {
+  background-color: #fc0;
+}
+
+.car_brand_btn_wrap a:first-child:hover h5 {
+  color: #3a3a3b;
+}
+
+.car_brand_btn_wrap a:first-child:hover span {
+  background-image: url(../img/repair/repair-injectors-hover.svg);
+}
+
+.car_brand_btn_wrap a:last-child {
+  background-color: #fc0;
+}
+
+.car_brand_btn_wrap a:last-child h5 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #3a3a3b;
+  text-align: center;
+  margin: 25px 0 0;
+}
+
+.car_brand_btn_wrap a:last-child span {
+  display: block;
+  width: 91px;
+  height: 91px;
+  background-image: url(../img/repair/repair-tnvd.svg);
+  background-size: cover;
+  margin: 25px auto 0;
+}
+
+.car_brand_btn_wrap a:last-child:hover {
+  background-color: #3a3a3b;
+}
+
+.car_brand_btn_wrap a:last-child:hover h5 {
+  color: #fc0;
+}
+
+.car_brand_btn_wrap a:last-child:hover span {
+  background-image: url(../img/repair/repair-tnvd-hover.svg);
+}
+
+/* Car brand page end */
 /*# sourceMappingURL=main.css.map */

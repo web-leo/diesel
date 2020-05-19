@@ -2445,7 +2445,7 @@
    color: #333;
 }
 
-.pafination {
+.pagination {
    display: flex;
    align-items: center;
    margin: 50px 0;
@@ -3141,3 +3141,501 @@
 }
 
 /* Discounts cards end */
+
+/* Recommendations page */
+.recommendations {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   span {
+      display: block;
+      width: 100%;
+      height: 21px;
+      background-image: url(../img/pattern/pattern-for-auto-logos.png);
+      margin: 30px 0 0;
+   }
+}
+
+.recommendations_item {
+   width: 790px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 30px 0 0;
+
+   img {
+      width: 398px;
+      height: 246px;
+      object-fit: cover;
+      object-position: center;
+   }
+
+   div {
+      width: 380px;
+      height: 246px;
+      position: relative;
+
+      h5 {
+         font-size: 30px;
+         font-weight: 300;
+      }
+
+      p {
+         margin: 5px 0 0;
+      }
+
+      a {
+         background: url(../img/icons/btn-icon.svg), #fc0;
+         background-repeat: no-repeat;
+         background-position: 28% 50%;
+         color: #000;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: 1px solid #fc0;
+         transition: 0.5s;
+         font-family: "Oswald";
+         width: 236px;
+         height: 36px;
+         border-radius: 0;
+         padding: 0;
+         font-size: 18px;
+         font-weight: 300;
+         margin: 66px 0 0;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+
+         &:hover {
+            background-color: transparent;
+            color: #fc0;
+            background: url(../img/icons/btn-icon-hover.svg);
+            background-repeat: no-repeat;
+            background-position: 28% 50%;
+         }
+      }
+   }
+
+}
+
+/* Recommendations page end */
+
+/* Recommendation page */
+.recommendation_page {
+   display: flex;
+   justify-content: space-between;
+}
+
+.recommendation_page_content {
+   width: 812px;
+}
+
+.recommendation_title {
+   font-size: 47px;
+   font-weight: 300;
+   text-align: center;
+}
+
+.recommendation_page_img {
+   width: 100%;
+   height: 536px;
+   object-fit: cover;
+   object-position: center;
+   margin: 35px 0 0;
+}
+
+.recommendation_page_text {
+   margin-top: 50px;
+
+   p {
+      margin-bottom: 35px;
+   }
+}
+
+.recommendation_page_menu {
+   width: 400px;
+   margin: 70px 0 0;
+
+   a {
+      font-size: 29px;
+      font-weight: 300;
+      color: #000;
+      line-height: 35px;
+      transition: .5s;
+      display: block;
+      margin: 0 0 25px;
+
+      &:hover {
+         color: $color;
+      }
+   }
+}
+
+/* Recommendation page end */
+
+/* Map */
+#map {
+   width: 100%;
+   height: 496px;
+}
+
+/* Map end */
+
+/* Contacts */
+#contacts {
+   padding: 50px 0;
+
+   .footer_social_links a {
+      margin: 0 25px 0 0;
+   }
+}
+
+.contacts_wrap {
+   display: flex;
+   justify-content: space-between;
+
+   p {
+      color: #333;
+   }
+
+   .work_time {
+      span:hover {
+         background-image: url(../img/icons/clock-black.svg);
+      }
+
+      &:hover span {
+         background-image: url("../img/icons/clock-black.svg");
+      }
+
+      &:hover p {
+         color: #333;
+      }
+   }
+
+   .address {
+      &:hover a {
+         background-image: url("../img/icons/map-marker-black.svg");
+      }
+
+      p {
+         color: #333;
+      }
+   }
+
+   .header_tel {
+
+      &:hover {
+         .header_tel_icon {
+            background-image: url("../img/icons/phone-black.svg");
+         }
+
+         .header_tel_number {
+            color: #333;
+         }
+      }
+
+      .header_tel_number {
+         color: #333;
+         text-align: left;
+
+         span {
+            margin-left: 25px;
+         }
+      }
+   }
+}
+
+.contacts_item_title {
+   font-size: 30px;
+   font-weight: 300;
+   color: #333;
+   text-transform: uppercase;
+   margin: 0 0 15px 38px;
+}
+
+.contacts_form {
+   background-color: #3a3a3b;
+   border: 1px solid #707070;
+   margin: 65px 0 0;
+   padding: 50px 0 75px;
+
+   h6 {
+      color: $color;
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+   }
+
+   form {
+      width: 1088px;
+      margin: 35px auto 0;
+   }
+
+   .form_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+
+   label {
+      margin: 0 0 5px 15px;
+      display: block;
+      color: #fff;
+      opacity: .7;
+   }
+
+   input {
+      width: 100%;
+      height: 48px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #c4a012;
+      border-radius: 4px;
+      padding-left: 15px;
+      margin: 0 0 8.5px;
+
+      &:last-child {
+         margin: 0;
+      }
+   }
+
+   textarea {
+      width: 674px;
+      height: 203px;
+      background-color: transparent;
+      border: 1px solid #c4a012;
+      border-radius: 4px;
+      padding: 15px;
+      color: #fff;
+   }
+
+   input[type="submit"] {
+      background: url(../img/icons/btn-icon.svg), #fc0;
+      background-repeat: no-repeat;
+      background-position: 28% 50%;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fc0;
+      transition: 0.5s;
+      font-family: "Oswald";
+      width: 261px;
+      height: 64px;
+      border-radius: 0;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 300;
+      margin: 66px auto 0;
+
+      &:hover {
+         background-color: transparent;
+         color: #fc0;
+         background: url(../img/icons/btn-icon-hover.svg);
+         background-repeat: no-repeat;
+         background-position: 28% 50%;
+      }
+   }
+}
+
+.form_box {
+   width: 398px;
+}
+
+#contacts_footer {
+   background-image: url(../img/bg/bg-contacts-footer.jpg);
+   padding: 123px 0 19px;
+
+   .copyright {
+      color: #000;
+      opacity: .5;
+      margin: 0;
+      text-align: left;
+   }
+
+   .footer_bottom_bg {
+      position: static;
+      background: none;
+      padding: 0;
+      width: auto;
+      height: auto;
+
+      p {
+         font-size: 14px;
+         color: #000;
+         opacity: 0.6;
+      }
+
+      a {
+         font-size: 14px;
+         color: #000;
+         opacity: 0.6;
+         font-family: "PTSans";
+         margin: -2px 0 0;
+         display: block;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+.contacts_footer_wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: auto;
+   width: 900px;
+}
+
+/* Contacts end */
+
+/* Car brand page */
+.car_brand_wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin: 0 0 75px;
+}
+
+.car_brand_imgs {
+   width: 950px;
+   height: 668px;
+   position: relative;
+}
+
+.car_brand_logo {
+   width: 260px;
+   height: 260px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.car_brand_img {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+
+.car_brand_list {
+   width: 420px;
+
+   h5 {
+      font-size: 29px;
+      font-weight: 300;
+      text-align: center;
+   }
+
+   ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 380px;
+      margin: 35px 0 0;
+
+      li {
+         font-size: 18px;
+         line-height: 27px;
+         font-family: 'PTSans';
+      }
+   }
+}
+
+.car_brand_text_wrap {
+   margin: 35px auto 0;
+   width: 802px;
+
+   p {
+      margin-bottom: 25px;
+   }
+}
+
+.car_brand_btn_wrap {
+   display: flex;
+   justify-content: space-between;
+   width: 802px;
+   margin: 75px auto 0;
+
+   a {
+      display: block;
+      width: 395px;
+      height: 200px;
+      transition: .5s;
+
+      &:first-child {
+         background-color: #3a3a3b;
+
+         h5 {
+            font-size: 28px;
+            font-weight: 300;
+            color: $color;
+            text-align: center;
+            margin: 25px 0 0;
+         }
+
+         span {
+            display: block;
+            width: 91px;
+            height: 91px;
+            background-image: url(../img/repair/repair-injectors.svg);
+            background-size: cover;
+            margin: 25px auto 0;
+         }
+
+         &:hover {
+            background-color: $color;
+
+            h5 {
+               color: #3a3a3b;
+            }
+
+            span {
+               background-image: url(../img/repair/repair-injectors-hover.svg);
+            }
+         }
+      }
+
+      &:last-child {
+         background-color: $color;
+
+         h5 {
+            font-size: 28px;
+            font-weight: 300;
+            color: #3a3a3b;
+            text-align: center;
+            margin: 25px 0 0;
+         }
+
+         span {
+            display: block;
+            width: 91px;
+            height: 91px;
+            background-image: url(../img/repair/repair-tnvd.svg);
+            background-size: cover;
+            margin: 25px auto 0;
+         }
+
+         &:hover {
+            background-color: #3a3a3b;
+
+            h5 {
+               color: $color;
+            }
+
+            span {
+               background-image: url(../img/repair/repair-tnvd-hover.svg);
+            }
+         }
+      }
+
+   }
+}
+
+/* Car brand page end */

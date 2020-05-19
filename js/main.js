@@ -198,9 +198,9 @@ $(".popup-youtube").magnificPopup({
 });
 // Modal popup for video end
 
-// Add tag span
+// Add tag span for cars logo
 $("<span></span>").insertAfter(".car_brands_link:nth-child(8n)");
-// Add tag span end
+// Add tag span for cars logo end
 
 // Tabs
 $(".tabs_menu a").click(function (e) {
@@ -214,3 +214,7 @@ $(".tabs_menu a").click(function (e) {
    $(tab).fadeIn(1500);
 });
 // Tabs end
+
+// Add tag span for cars logo
+$("<span></span>").insertAfter(".recommendations_item:nth-child(2n)");
+// Add tag span for cars logo end
