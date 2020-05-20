@@ -1,6 +1,30 @@
 @import "_fonts.scss";
 @import "_specifications.scss";
 
+/* Loader */
+.loaderArea {
+   overflow: hidden;
+   position: fixed;
+   background: #fff;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 100000;
+}
+
+.loader {
+   background: url('../img/loader/loader.gif') no-repeat;
+   height: 256px;
+   width: 256px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* Loader end */
+
 /* Header */
 #header {
    height: 60px;
@@ -1947,14 +1971,40 @@
 .car_brands_link {
    width: 128px;
    height: 128px;
-   background-size: cover;
    background-position: center;
    display: block;
    margin: 30px 21px 0;
    transition: 0.5s;
+   position: relative;
+}
 
-   &:hover {
-      transform: scale(1.2);
+.car_brands_link_logo {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 1;
+   transition: .5s;
+}
+
+.car_brands_link_logo-hover {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: .5s;
+}
+
+.car_brands_link:hover {
+   background-color: #333;
+
+   .car_brands_link_logo {
+      opacity: 0;
+   }
+
+   .car_brands_link_logo-hover {
+      opacity: 1;
    }
 }
 

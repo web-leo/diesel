@@ -1,3 +1,11 @@
+// Loader
+$(window).on("load", function () {
+   ($preloader = $(".loaderArea")), ($loader = $preloader.find(".loader"));
+   $loader.fadeOut();
+   $preloader.delay(350).fadeOut("slow");
+});
+// Loader end
+
 // Hamburger
 var men = true;
 $("#sandwich").click(function () {
