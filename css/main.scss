@@ -71,10 +71,6 @@
    align-items: center;
    margin-right: 168px;
 
-   &:hover a {
-      background-image: url("../img/icons/map-marker-hover.svg");
-   }
-
    a {
       width: 19px;
       height: 30px;
@@ -84,11 +80,20 @@
       margin-right: 15px;
    }
 
+   &:hover a {
+      background-image: url("../img/icons/map-marker-hover.svg");
+   }
+
    p {
       font-size: 16px;
-      color: #fff;
+      color: $color;
       line-height: 24px;
       margin-top: -4px;
+      transition: .5s;
+   }
+
+   &:hover p {
+      color: #fff;
    }
 }
 
@@ -201,6 +206,23 @@
       height: 36px;
       border: 0;
       background-color: $color;
+      transition: .5s;
+
+      div {
+         width: 25.621px;
+         height: 25.621px;
+         background-image: url(../img/icons/loupe.svg);
+         background-size: cover;
+         background-position: center;
+      }
+
+      &:hover {
+         background-color: #000;
+
+         div {
+            background-image: url(../img/icons/loupe-hover.svg);
+         }
+      }
    }
 }
 
@@ -212,11 +234,13 @@
 }
 
 #menu {
-   background-image: url(../img/bg/bg-menu.png);
-   height: 114px;
+   // background-image: url(../img/bg/bg-menu.png);
+   background-color: #fff;
+   height: 72px;
    position: absolute;
    left: 0;
    width: 100%;
+   z-index: 10;
 
    &.default {
       position: fixed;
@@ -224,6 +248,19 @@
       left: 0;
       width: 100%;
       z-index: 10;
+   }
+
+   &:before {
+      content: '';
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      width: 100%;
+      height: 42px;
+      background-color: #fff;
+      transform: rotate(-1.2deg);
+      z-index: -1;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
    }
 }
 
@@ -251,13 +288,13 @@
    text-transform: uppercase;
    font-size: 18px;
    color: #000;
-   border-top: 3px solid transparent;
-   padding-top: 27px;
+   border-top: 5px solid transparent;
+   padding-top: 25px;
 }
 
 .menu a:hover {
    color: $color;
-   border-top: 3px solid $color;
+   border-top: 5px solid $color;
    transition: 0.5s;
 }
 
@@ -269,8 +306,15 @@
 
 /* First section */
 #first {
-   background: url(../img/pictures/motor.png) no-repeat bottom right, $color;
-   padding: 211px 0 126px;
+   background-color: $color;
+   position: relative;
+   padding: 177px 0 160px;
+}
+
+.first_img {
+   position: absolute;
+   bottom: 32px;
+   right: 0;
 }
 
 .first_title {
@@ -299,8 +343,21 @@
 /* Fix */
 #fix {
    background: url(../img/bg/bg-fix.png) no-repeat top center;
-   margin-top: -45px;
-   padding: 99px 0 94px;
+   background-color: #3a3a3b;
+   margin-top: -35px;
+   padding: 57px 0 94px;
+   position: relative;
+
+   &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -20px;
+      width: 100%;
+      height: 45px;
+      background-color: #3a3a3b;
+      transform: rotate(1.2deg);
+   }
 }
 
 .fix {
@@ -464,17 +521,29 @@
 
 /* Quotation */
 #quotation {
-   padding: 91px 0 138px;
+   padding: 91px 0 182px;
 }
 
 .quotation {
-   background-image: url(../img/bg/bg-quotation.png);
+   background-color: $color;
    background-size: cover;
    width: 100%;
-   height: 270px;
+   height: 224px;
    display: flex;
    justify-content: center;
    padding: 120px 0 0;
+   position: relative;
+
+   &:after {
+      content: '';
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      transform: rotate(1.3deg);
+      background-color: $color;
+   }
 
    div {
       width: 85%;
@@ -524,11 +593,12 @@
    &:before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -18px;
       left: 0;
       width: 100%;
       height: 36px;
-      background-image: url(../img/bg/bg-weathering.png);
+      background-color: $color;
+      transform: rotate(-1deg);
    }
 }
 
@@ -659,11 +729,17 @@
       content: "";
       width: 100%;
       height: 51px;
-      background-image: url(../img/bg/bg-reviews-weathering.png);
+      background-color: $color;
       position: absolute;
-      top: 0;
+      top: -23px;
       left: 0;
+      transform: rotate(1.3deg);
    }
+}
+
+.reviews_title {
+   position: relative;
+   z-index: 1;
 }
 
 .quotes {
@@ -874,11 +950,12 @@
    &:before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -18px;
       left: 0;
       width: 100%;
       height: 36px;
-      background-image: url(../img/bg/bg-weathering.png);
+      background-color: $color;
+      transform: rotate(-1deg);
    }
 
    a {
@@ -949,7 +1026,7 @@
 
 .certificates_gallery_arrows-left {
    background-image: url(../img/certificate-cover/arrow-prev.svg);
-   left: 25px;
+   left: 270px;
 
    &:hover {
       background-image: url(../img/certificate-cover/arrow-prev-hover.svg);
@@ -958,7 +1035,7 @@
 
 .certificates_gallery_arrows-right {
    background-image: url(../img/certificate-cover/arrow-next.svg);
-   right: 25px;
+   right: 270px;
 
    &:hover {
       background-image: url(../img/certificate-cover/arrow-next-hover.svg);
@@ -1087,9 +1164,19 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 115px;
-      background-image: url(../img/bg/bg-slogan-weathering.png);
-      background-size: cover;
+      height: 84px;
+      background-color: $color;
+   }
+
+   &:before {
+      content: "";
+      position: absolute;
+      bottom: 57px;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      background-color: $color;
+      transform: rotate(1deg);
    }
 
    h3 {
@@ -1367,11 +1454,21 @@
    bottom: 0;
    left: 0;
    width: 100%;
-   height: 107px;
-   background-image: url(../img/bg/bg-footer.png);
-   background-size: cover;
+   height: 62px;
+   background-color: $color;
    text-align: right;
-   padding: 47px 145px 0 0;
+   padding: 3px 145px 0 0;
+
+   &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 38px;
+      width: 100%;
+      height: 45px;
+      background-color: $color;
+      transform: rotate(-1.2deg);
+   }
 
    p {
       font-size: 14px;
@@ -1552,7 +1649,7 @@
 
 /* Page first section */
 .page_first {
-   padding: 126px 0;
+   padding: 97px 0 108px;
    position: relative;
 
    &:before {
@@ -1560,9 +1657,20 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../img/bg/bg-page-first-weathering.png);
+      background-color: $color;
       width: 100%;
-      height: 70px;
+      height: 40px;
+   }
+
+   &:after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 0;
+      background-color: $color;
+      width: 100%;
+      height: 40px;
+      transform: rotate(1deg);
    }
 }
 
@@ -1640,6 +1748,16 @@
    }
 }
 
+.marker {
+   width: 5px;
+   height: 5px;
+   background-color: #000;
+   border-radius: 50%;
+   margin-right: 26px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
 /* Page first section end */
 
 /* Services content */
@@ -1673,11 +1791,21 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 275px;
+      height: 224px;
       left: 0;
       top: 0;
-      background-image: url(../img/bg/bg-quotation.png);
-      background-size: cover;
+      background-color: $color;
+   }
+
+   &:after {
+      content: '';
+      position: absolute;
+      top: 200px;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      transform: rotate(1.3deg);
+      background-color: $color;
    }
 }
 
@@ -2014,17 +2142,28 @@
 #second_slogan {
    background-size: cover;
    background-position: center;
-   padding: 80px 0 275px;
+   padding: 123px 0 232px;
    position: relative;
 
    &:before {
       content: "";
       position: absolute;
       left: 0;
+      bottom: 50px;
+      width: 100%;
+      height: 45px;
+      transform: rotate(1.2deg);
+      background-color: $color;
+   }
+
+   &:after {
+      content: "";
+      position: absolute;
+      left: 0;
       bottom: 0;
       width: 100%;
-      height: 179px;
-      background-image: url(../img/bg/bg-second-slogan-line.png);
+      height: 70px;
+      background-color: $color;
    }
 }
 
@@ -2038,22 +2177,34 @@
       content: "";
       position: absolute;
       left: 0;
+      bottom: 115px;
+      width: 100%;
+      height: 45px;
+      transform: rotate(1.2deg);
+      background-color: $color;
+   }
+
+   &:after {
+      content: "";
+      position: absolute;
+      left: 0;
       bottom: 0;
       width: 100%;
-      height: 179px;
-      background-image: url(../img/bg/bg-second-slogan-line.png);
+      height: 135px;
+      background-color: $color;
    }
 }
 
 .second_slogan_title {
    font-size: 76px;
+   font-weight: 400;
    text-transform: uppercase;
    color: $color;
 }
 
 .second_slogan_text {
    font-size: 46px;
-   margin: 25px 0 0;
+   margin: 62px 0 0;
    color: #fcf9f9;
    opacity: 0.8;
    text-align: center;
@@ -2076,7 +2227,7 @@
       text-transform: none;
       display: inline-block;
       position: relative;
-      margin-top: 35px;
+      margin: 35px 0 20px;
       left: 0;
 
       &:before {
@@ -2107,7 +2258,7 @@
    h5 {
       font-size: 29px;
       font-weight: 300;
-      margin: 35px 0 0;
+      margin: 35px 0 32px;
    }
 }
 
@@ -2376,7 +2527,7 @@
    width: 398px;
 }
 
-.tabs_menu {
+.repair_nozzles_brand_more_details_sidebar_menu {
    margin: 64px 0 0;
 
    li {
@@ -2569,9 +2720,20 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../img/bg/bg-page-first-weathering.png);
+      background-color: $color;
       width: 100%;
-      height: 70px;
+      height: 40px;
+   }
+
+   &:after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 0;
+      background-color: $color;
+      width: 100%;
+      height: 40px;
+      transform: rotate(1deg);
    }
 }
 
@@ -3127,9 +3289,20 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../img/bg/bg-page-first-weathering.png);
+      background-color: $color;
       width: 100%;
-      height: 70px;
+      height: 40px;
+   }
+
+   &:after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 0;
+      background-color: $color;
+      width: 100%;
+      height: 40px;
+      transform: rotate(1deg);
    }
 }
 
@@ -3547,48 +3720,32 @@
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-   margin: 0 0 75px;
+   margin: 0 0 14px;
 }
 
 .car_brand_imgs {
    width: 950px;
    height: 668px;
-   position: relative;
-}
-
-.car_brand_logo {
-   width: 260px;
-   height: 260px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   right: 0;
-   top: 0;
-}
-
-.car_brand_img {
-   position: absolute;
-   left: 0;
-   bottom: 0;
+   background-size: cover;
+   background-position: center;
 }
 
 .car_brand_list {
-   width: 420px;
+   width: 527px;
+   margin: 0 0 22px;
 
    h5 {
       font-size: 29px;
       font-weight: 300;
-      text-align: center;
+      margin: 0 0 0 82px;
    }
 
    ul {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      align-items: center;
       height: 380px;
-      margin: 35px 0 0;
+      margin: 59px 0 0;
 
       li {
          font-size: 18px;
@@ -3596,6 +3753,13 @@
          font-family: 'PTSans';
       }
    }
+}
+
+.car_brand_page_line {
+   width: 100%;
+   height: 21px;
+   background-image: url(../img/pattern/pattern-for-auto-logos.png);
+   margin: 0 0 33px;
 }
 
 .car_brand_text_wrap {
@@ -3610,8 +3774,8 @@
 .car_brand_btn_wrap {
    display: flex;
    justify-content: space-between;
-   width: 802px;
-   margin: 75px auto 0;
+   width: 810px;
+   margin: 122px auto 0;
 
    a {
       display: block;
@@ -3628,6 +3792,7 @@
             color: $color;
             text-align: center;
             margin: 25px 0 0;
+            text-transform: uppercase;
          }
 
          span {
@@ -3661,6 +3826,7 @@
             color: #3a3a3b;
             text-align: center;
             margin: 25px 0 0;
+            text-transform: uppercase;
          }
 
          span {
@@ -3687,5 +3853,6 @@
 
    }
 }
+
 
 /* Car brand page end */
