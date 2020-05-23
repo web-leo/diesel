@@ -387,8 +387,8 @@ h2 {
   -webkit-transform: rotate(-1.2deg);
           transform: rotate(-1.2deg);
   z-index: -1;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu_wrap {
@@ -1824,6 +1824,7 @@ h2 {
 .modal_title {
   color: #fc0;
   font-size: 40px;
+  line-height: 1.3;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1917,13 +1918,13 @@ h2 {
 
 .breadcrumbs a {
   font-size: 18px;
-  color: #fff;
+  color: #fc0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .breadcrumbs a:hover {
-  color: #fc0;
+  color: #fff;
 }
 
 .breadcrumbs span {
@@ -2918,20 +2919,15 @@ h2 {
   font-size: 30px;
   color: #000;
   width: 100%;
-  text-align: center;
   display: block;
-  padding: 17px 0;
+  padding: 17px 0 17px 60px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border: 2px solid transparent;
 }
 
-.repair_nozzles_brand_more_details_sidebar_menu li a.active {
-  background-color: #fc0;
-}
-
 .repair_nozzles_brand_more_details_sidebar_menu li a:hover {
-  border: 2px solid #fc0;
+  background-color: #fc0;
 }
 
 .repair_nozzles_brand_btn {
@@ -3620,6 +3616,8 @@ h2 {
 .discounts_item:hover .discounts_card_img {
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .discounts_item_how_much {
@@ -3819,6 +3817,8 @@ h2 {
 .discounts_cards_box a img:hover {
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* Discounts cards end */
@@ -3894,7 +3894,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #fc0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Oswald";
@@ -3911,9 +3910,8 @@ h2 {
 }
 
 .recommendations_item div a:hover {
-  background-color: transparent;
   color: #fc0;
-  background: url(../img/icons/btn-icon-hover.svg);
+  background: url(../img/icons/btn-icon-hover.svg), #3a3a3b;
   background-repeat: no-repeat;
   background-position: 28% 50%;
 }
@@ -4172,6 +4170,12 @@ h2 {
   padding: 0;
   width: auto;
   height: auto;
+}
+
+#contacts_footer .footer_bottom_bg:before {
+  content: '';
+  width: 0;
+  height: 0;
 }
 
 #contacts_footer .footer_bottom_bg p {
