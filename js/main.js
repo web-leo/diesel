@@ -223,6 +223,30 @@ $(".tabs_menu a").click(function (e) {
 });
 // Tabs end
 
-// Add tag span for cars logo
-$("<span></span>").insertAfter(".recommendations_item:nth-child(2n)");
-// Add tag span for cars logo end
+// Pagination for recomendation page
+$(".recommendations").paginate({
+   // how many items per page
+   perPage: 6,
+
+   // boolean: scroll to top of the container if a user clicks on a pagination link
+   autoScroll: false,
+
+   // which elements to target
+   scope: ".recommendations_item",
+
+   // defines where the pagination will be displayed
+   paginatePosition: ["bottom"],
+
+   // Pagination selectors
+   containerTag: "nav",
+   paginationTag: "ul",
+   itemTag: "li",
+   linkTag: "a",
+
+   // Determines whether or not the plugin makes use of hash locations
+   useHashLocation: true,
+
+   // Triggered when a pagination link is clicked
+   onPageClick: function () {},
+});
+// Pagination for recomendation page end
