@@ -188,7 +188,7 @@ button::-moz-focus-inner {
 
 .mfp-counter {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   color: #CCC;
   font-size: 12px;

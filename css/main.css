@@ -57,6 +57,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 47px;
+  line-height: 1.2;
   font-weight: 300;
 }
 
@@ -436,7 +437,9 @@ h2 {
   transition: 0.5s;
 }
 
-#sandwich {
+#sandwich,
+.menu_close_btn,
+.social_box_mob {
   display: none;
 }
 
@@ -706,7 +709,6 @@ h2 {
   background-color: #fc0;
   background-size: cover;
   width: 100%;
-  height: 224px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,6 +729,7 @@ h2 {
   -webkit-transform: rotate(1.3deg);
           transform: rotate(1.3deg);
   background-color: #fc0;
+  z-index: -1;
 }
 
 .quotation div {
@@ -738,6 +741,7 @@ h2 {
   font-weight: 600;
   font-family: "Oswald";
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .quotation span {
@@ -946,20 +950,30 @@ h2 {
 
 .reviews_slider .slick_prev,
 .reviews_slider .slick_next {
-  top: auto;
-  bottom: 0;
-}
-
-.reviews_slider .slick_prev {
-  left: 683px;
-}
-
-.reviews_slider .slick_next {
-  right: 683px;
+  position: static;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin: 0 15px;
 }
 
 .reviews_slider .slick-dots {
-  bottom: 112px;
+  position: static;
+}
+
+.reviews_slider .controls {
+  margin: 70px 0 0;
+}
+
+.reviews_slider .controls-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviews_slider .slick-dots li {
@@ -1018,6 +1032,8 @@ h2 {
 
 .slick-center .reviews_slide_text {
   background-color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
   margin: 0 0 75px;
 }
 
@@ -1121,6 +1137,13 @@ h2 {
   background-position: center;
 }
 
+.mfp-iframe-holder .mfp-close,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  position: fixed;
+  top: 5px;
+  right: 5px !important;
+}
+
 /* Video reviews end */
 /* Certificates */
 #certificates {
@@ -1179,6 +1202,7 @@ h2 {
   left: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-size: cover;
 }
 
 .certificates_wrap a span:hover {
@@ -1226,6 +1250,7 @@ h2 {
           transform: translateY(-50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 1111;
 }
 
 .certificates_gallery_arrows-left {
@@ -1945,7 +1970,7 @@ h2 {
 /* Bread crumbs end */
 /* Page first section */
 .page_first {
-  padding: 97px 0 108px;
+  padding: 97px 0 205px;
   position: relative;
 }
 
@@ -1990,6 +2015,10 @@ h2 {
   background-color: #fc0;
 }
 
+.page_first_title_services {
+  top: -115px;
+}
+
 .about_text {
   color: #333;
   width: 1070px;
@@ -2013,7 +2042,7 @@ h2 {
 .about_content h4 {
   font-size: 29px;
   font-weight: 300;
-  line-height: 54px;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -2424,10 +2453,12 @@ h2 {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -24px;
   width: 100%;
-  height: 114px;
-  background-image: url(../img/bg/bg-menu.png);
+  height: 45px;
+  -webkit-transform: rotate(-1.2deg);
+          transform: rotate(-1.2deg);
+  background-color: #fc0;
 }
 
 .car_brands {
@@ -2436,15 +2467,8 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 100px 0 0;
-}
-
-.car_brands span {
-  display: block;
-  width: 100%;
-  height: 21px;
-  background-image: url(../img/pattern/pattern-for-auto-logos.png);
-  margin: 30px 0 0;
+  background-image: url(../img/bg/bg-pattern-for-auto-logos.jpg);
+  margin-top: 44px;
 }
 
 .car_brands_link {
@@ -2452,7 +2476,7 @@ h2 {
   height: 128px;
   background-position: center;
   display: block;
-  margin: 30px 21px 0;
+  margin: 0 21px 44px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
@@ -2561,6 +2585,7 @@ h2 {
 
 .second_slogan_text {
   font-size: 46px;
+  line-height: 1.2;
   margin: 62px 0 0;
   color: #fcf9f9;
   opacity: 0.8;
@@ -2588,6 +2613,7 @@ h2 {
   text-transform: none;
   display: inline-block;
   position: relative;
+  line-height: 1.3;
   margin: 35px 0 20px;
   left: 0;
 }
@@ -2620,6 +2646,7 @@ h2 {
   font-size: 29px;
   font-weight: 300;
   margin: 35px 0 32px;
+  line-height: 1.5;
 }
 
 .repair_injectors_sidebar {
@@ -2734,10 +2761,8 @@ h2 {
 .repair_injectors_content_box_video {
   width: 536px;
   height: 310px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  background-size: cover;
+  background-position: center;
   margin: 22px 0 0;
 }
 
@@ -2808,7 +2833,7 @@ h2 {
 .importantly p {
   margin: 0;
   border-left: 2px solid #fc0;
-  padding-left: 5px;
+  padding-left: 20px;
 }
 
 /* Repair content end */
@@ -2976,7 +3001,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 25px 0 0;
+  margin: 25px 0 40px;
 }
 
 .search_form input {
@@ -3040,6 +3065,7 @@ h2 {
 .repair_nozzles_brand_search_result_number {
   color: #333;
   margin-right: 50px;
+  width: 285px;
 }
 
 .repair_nozzles_brand_search_result_description {
@@ -3413,6 +3439,7 @@ h2 {
 .repair-tnvd td {
   font-family: "PTSans" !important;
   font-size: 18px !important;
+  line-height: 1.3;
 }
 
 /* Table for TNVD end */
@@ -4007,7 +4034,7 @@ h2 {
 
 .recommendation_page_menu {
   width: 400px;
-  margin: 70px 0 0;
+  margin: 75px 0 0;
 }
 
 .recommendation_page_menu a {
@@ -4418,4 +4445,1480 @@ h2 {
 }
 
 /* Car brand page end */
+/* Responsive */
+@media screen and (max-width: 1864px) {
+  .reviews_slide {
+    width: 460px;
+  }
+  .first_img {
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 1815px) {
+  .certificates_gallery_arrows-right {
+    right: 30px;
+  }
+  .certificates_gallery_arrows-left {
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 1692px) {
+  .work-stages_box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 845px;
+  }
+  .work-stage {
+    margin: 0 -44px 25px 0;
+  }
+  .work-stages_wrap {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1669px) {
+  .car_brand_wrap {
+    margin: 0 auto 14px;
+    width: 1365px;
+  }
+  .car_brand_imgs {
+    width: 800px;
+    height: 560px;
+  }
+}
+
+@media screen and (max-width: 1659px) {
+  .first_img {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .reviews_slide {
+    width: 550px;
+  }
+  .reviews_slide_text {
+    background-color: #fff;
+    opacity: 1;
+  }
+  .reviews_slide_text p {
+    color: #333;
+  }
+  .reviews_slide_text::after {
+    border-color: transparent transparent #ffffff transparent;
+  }
+  .reviews_slide_text img,
+  .reviews_slide_name {
+    opacity: 1;
+  }
+  .repair_nozzles_brand_content {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 1549px) {
+  .prices_box {
+    width: calc(100% - 450px);
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .first_title {
+    font-size: 70px;
+    width: 880px;
+  }
+  .first_subtitle {
+    width: 880px;
+  }
+  .repair_nozzles_brand_search_result,
+  .repair_nozzles_brand_more_details_box {
+    width: 930px;
+  }
+}
+
+@media screen and (max-width: 1485px) {
+  .repair_nozzles_brand_content {
+    width: 395px;
+  }
+}
+
+@media screen and (max-width: 1394px) {
+  .container,
+  .container-big {
+    max-width: 1200px;
+  }
+  .work_time {
+    margin-right: 70px;
+  }
+  .address {
+    margin-right: 40px;
+  }
+  .header_tel {
+    margin-right: 55px;
+  }
+  .first_title {
+    font-size: 60px;
+    width: 755px;
+    line-height: 1.3;
+  }
+  .first_subtitle {
+    width: 755px;
+  }
+  .first_img {
+    width: 450px;
+  }
+  .why_item p {
+    width: 440px;
+  }
+  #why {
+    padding: 71px 0 50px;
+  }
+  .work-stages_wrap {
+    padding: 115px 0 70px;
+  }
+  .footer {
+    width: 100%;
+  }
+  .our_clients_slider .slick_next {
+    right: 0;
+  }
+  .our_clients_slider .slick_prev {
+    left: 0;
+  }
+  .our_clients_slider {
+    width: 100%;
+    padding: 0 60px;
+  }
+  .our_days_wrap {
+    margin: 160px auto 0;
+    width: 845px;
+  }
+  .about_content_box,
+  .services_content_box {
+    width: 560px;
+  }
+  .car_brands {
+    width: 680px;
+    margin: 0 auto;
+  }
+  .repair_injectors_content_box {
+    width: 700px;
+  }
+  .float_content_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .float_content,
+  .prices_box {
+    width: 100%;
+  }
+  .prices_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prices_sidebar {
+    margin: auto;
+  }
+  .discounts_cards_box {
+    width: 850px;
+  }
+  .recommendation_page_content {
+    width: 720px;
+  }
+  .recommendation_page_img {
+    height: 520px;
+  }
+  .car_brand_wrap {
+    width: 100%;
+  }
+  .car_brand_imgs {
+    width: 610px;
+    height: 425px;
+  }
+}
+
+@media screen and (max-width: 1375px) {
+  .repair_nozzles_brand_search_result,
+  .repair_nozzles_brand_more_details_box {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 1316px) {
+  .repair_nozzles_brand_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .repair_nozzles_brand_content {
+    width: 70%;
+  }
+  p.no_margin1316 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container,
+  .container-big {
+    max-width: 992px;
+  }
+  .container-big {
+    max-width: 992px;
+  }
+  .up_btn {
+    bottom: 17px;
+    right: 17px;
+  }
+  .header_search input {
+    width: 140px;
+  }
+  .work_time {
+    margin-right: 40px;
+  }
+  .address {
+    margin-right: 40px;
+  }
+  .header_tel {
+    margin-right: 40px;
+  }
+  .social_network {
+    width: 45px;
+  }
+  .menu {
+    width: 685px;
+  }
+  .statistics,
+  .about_text,
+  .repair_nozzles_brand_content,
+  .contacts_form form,
+  .car_brand_list {
+    width: 100%;
+  }
+  .fix_item {
+    width: 425px;
+  }
+  .statistics_item p {
+    font-size: 25px;
+  }
+  .why_item p {
+    width: 345px;
+  }
+  .video_reviews_item {
+    width: 460px;
+  }
+  .video_review {
+    height: 265px;
+  }
+  #video_reviews {
+    padding: 95px 0;
+  }
+  .consultation p,
+  .discount p {
+    width: 310px;
+  }
+  .certificates_title {
+    line-height: 1.3;
+  }
+  .certificates_wrap a img {
+    width: 220px;
+    height: 315px;
+  }
+  .quotation {
+    padding: 60px 0 0;
+  }
+  .first_title {
+    font-size: 55px;
+    width: 525px;
+  }
+  .first_subtitle {
+    width: 405px;
+    text-align: left;
+  }
+  .first_btn {
+    margin: 55px 0 0;
+  }
+  .first_img {
+    width: 524px;
+  }
+  #discount_and_consultation {
+    padding: 97px 0 150px;
+  }
+  .about_img {
+    height: 387px;
+  }
+  .about_content_box,
+  .services_content_box {
+    width: 450px;
+  }
+  .auto_facts_item {
+    width: 460px;
+  }
+  .footer_wrap .work_time span,
+  .footer_wrap .header_tel_icon {
+    width: 35px;
+    height: 35px;
+  }
+  .footer_wrap .work_time p,
+  .footer_wrap .address p,
+  .footer_wrap .header_tel_number,
+  .footer_wrap .email_address {
+    font-size: 18px;
+  }
+  .footer_wrap .address a {
+    width: 22px;
+    height: 35px;
+  }
+  .footer_wrap .email_icon {
+    width: 44px;
+    height: 35px;
+  }
+  .repair_injectors_content_box {
+    width: 537px;
+  }
+  .contents_img {
+    float: inherit;
+  }
+  .repair_injectors_content_box h4:before {
+    width: 0;
+  }
+  .repair_nozzles_brand_more_details_sidebar_menu li a {
+    padding: 17px 0 17px 30px;
+    font-size: 25px;
+  }
+  .repair_nozzles_brand_search_result {
+    width: 526px;
+  }
+  .repair_nozzles_brand_more_details_sidebar_menu {
+    margin: 42px 0 0;
+  }
+  .discounts_cards_box {
+    width: 560px;
+  }
+  .template_discounts {
+    height: 417px;
+  }
+  .recommendation_page_content {
+    width: 510px;
+  }
+  .recommendation_page_img {
+    height: 366px;
+  }
+  .contacts_form textarea {
+    width: 475px;
+  }
+  .contacts_form {
+    padding: 50px 20px 75px;
+  }
+  .car_brand_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .car_brand_imgs {
+    width: 100%;
+    height: 675px;
+  }
+  .car_brand_list h5 {
+    margin: 0;
+    text-align: center;
+  }
+  .car_brand_list ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container,
+  .container-big {
+    max-width: 768px;
+  }
+  #header .work_time,
+  #header .address,
+  #header .social_networks {
+    display: none;
+  }
+  .header_tel {
+    margin-right: 0;
+  }
+  .header_search input {
+    width: 220px;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .menu {
+    width: 382px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #e0dfdf;
+    height: 100vh;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 1;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .menu.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    overflow-y: scroll;
+  }
+  .menu ul,
+  .menu ul li {
+    display: block;
+  }
+  .menu ul li a {
+    display: block;
+    line-height: 1.3;
+    margin-top: 20px;
+    text-align: left;
+    padding: 0 0 0 25px;
+  }
+  .menu a:hover {
+    color: #000;
+    border-top: 5px solid transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #sandwich {
+    margin: 0 0 18px;
+    display: block;
+  }
+  .menu_close_btn {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #fc0;
+    padding: 3px 0 0 25px;
+  }
+  .menu_close_btn div {
+    position: relative;
+    top: 20px;
+    width: 50px;
+    height: 5px;
+    background-color: #3a3a3b;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    left: 0;
+    display: block;
+  }
+  .menu_close_btn div::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    top: -4px;
+    right: -3px;
+    background-color: #3a3a3b;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu_close_btn div::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    bottom: -4px;
+    right: -3px;
+    background-color: #3a3a3b;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .menu_close_btn:hover {
+    -webkit-animation: menu_close_btn 1s linear infinite;
+            animation: menu_close_btn 1s linear infinite;
+  }
+  @-webkit-keyframes .menu_close_btn {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes .menu_close_btn {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .sw_top {
+    position: relative;
+    top: 0;
+    width: 50px;
+    height: 5px;
+    background: #3a3a3b;
+    border: none;
+    -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+    transition: top 0.2s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  }
+  .sw_bottom {
+    position: relative;
+    width: 50px;
+    height: 5px;
+    top: 10px;
+    background: #3a3a3b;
+    border: none;
+    -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+    transition: top 0.2s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+    -webkit-transition-delay: 0.2s, 0s;
+            transition-delay: 0.2s, 0s;
+  }
+  .sw_footer {
+    position: relative;
+    width: 50px;
+    height: 5px;
+    top: 20px;
+    background: #3a3a3b;
+    border: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .social_box_mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 50px 0 25px 25px;
+  }
+  .social_box_mob a {
+    width: 47px;
+    height: 47px;
+    background-color: #fc0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .social_box_mob a:nth-child(1) span {
+    width: 27px;
+    height: 16px;
+    background-image: url(../img/social-icons/vk-hover.svg);
+    background-size: cover;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .social_box_mob a:hover {
+    background-color: #333;
+  }
+  .social_box_mob a:hover:nth-child(1) span {
+    background-image: url(../img/social-icons/vk.svg);
+  }
+  .social_box_mob a:nth-child(2) span {
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/social-icons/instagram-hover.svg);
+    background-size: cover;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .social_box_mob a:hover:nth-child(2) span {
+    background-image: url(../img/social-icons/instagram.svg);
+  }
+  .social_box_mob a:nth-child(3) span {
+    width: 11px;
+    height: 20px;
+    background-image: url(../img/social-icons/facebook-hover.svg);
+    background-size: cover;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .social_box_mob a:hover:nth-child(3) span {
+    background-image: url(../img/social-icons/facebook.svg);
+  }
+  .fix_item {
+    width: 315px;
+  }
+  .statistics_item p {
+    font-size: 22px;
+  }
+  .why_item p {
+    width: 370px;
+  }
+  .why_item {
+    margin: 0 auto 47px;
+    width: 440px;
+  }
+  .quotation p {
+    font-size: 40px;
+  }
+  .video_reviews {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .video_reviews_item {
+    width: 536px;
+    margin: 0 auto 50px;
+  }
+  .video_reviews_item:last-child {
+    margin-bottom: 0;
+  }
+  .video_review {
+    height: 310px;
+  }
+  .certificates_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .discount_and_consultation {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .discount_and_consultation:before {
+    left: 41%;
+    top: 40.7%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .consultation {
+    padding: 45px 20px 110px;
+  }
+  .discount {
+    padding: 102px 20px 60px;
+  }
+  .footer_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer_wrap .work_time,
+  .footer_wrap .address,
+  .footer_wrap .header_tel,
+  .footer_wrap .email {
+    width: 50%;
+  }
+  .footer_wrap .work_time,
+  .footer_wrap .address {
+    margin-bottom: 35px;
+  }
+  .work-stages_box {
+    width: 578px;
+  }
+  .first_img {
+    width: 430px;
+  }
+  .certificates_wrap a {
+    margin: 0 8px 16px;
+  }
+  .about_content_box,
+  .services_content_box {
+    width: 330px;
+  }
+  .contents_img {
+    float: inherit;
+  }
+  .our_days_wrap,
+  .repair_injectors__text,
+  .auto_facts_item,
+  .repair_injectors_content_box,
+  .repair_injectors_sidebar,
+  .repair_nozzles_brand_search_result,
+  .malfunction_box,
+  .prices_sidebar,
+  .recommendation_page_content,
+  .contacts_footer_wrap,
+  .car_brand_btn_wrap,
+  .car_brand_text_wrap {
+    width: 100%;
+  }
+  .our_days_item {
+    width: 100%;
+    height: 456px;
+  }
+  .auto_facts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .auto_facts_item:first-child {
+    margin-bottom: 35px;
+  }
+  .page_first_title_services {
+    top: -150px;
+  }
+  .page_first_title_services:before {
+    width: 0;
+  }
+  .page_first_title:before {
+    width: 0;
+  }
+  .repair_injectors_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .repair_nozzles_brand_search_result_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .repair_nozzles_brand_search_result_number {
+    width: 170px;
+  }
+  .prices_table2 td {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+  .prices_box {
+    overflow-x: scroll;
+  }
+  .discounts_cards_box {
+    width: 260px;
+  }
+  .template_discounts {
+    height: 345px;
+  }
+  .recommendations_item div {
+    width: 320px;
+  }
+  .recommendation_page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recommendation_page_img {
+    height: 530px;
+  }
+  .recommendation_page_menu {
+    width: 100%;
+    margin: 15px 0 0;
+  }
+  .page_first {
+    padding: 97px 0 135px;
+  }
+  .contacts_form textarea {
+    width: 270px;
+  }
+  .contacts_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work_time_item {
+    margin-top: 30px;
+  }
+  .car_brand_imgs {
+    height: 520px;
+  }
+  .car_brand_btn_wrap a {
+    width: 360px;
+  }
+  .certificates_gallery_arrows-left,
+  .certificates_gallery_arrows-right {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container,
+  .container-big {
+    max-width: 576px;
+  }
+  .fix {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fix_item:nth-child(2) {
+    margin-top: 50px;
+  }
+  .fix_item,
+  .why_item,
+  .consultation,
+  .discount,
+  .first_img,
+  .repair_nozzles_brand_more_details_box,
+  .repair_nozzles_brand_more_details_sidebar {
+    width: 100%;
+  }
+  .statistics_item span {
+    font-size: 65px;
+  }
+  .why_item p {
+    width: auto;
+  }
+  #first {
+    padding: 177px 0 230px;
+  }
+  .reviews_slide {
+    width: 400px;
+  }
+  #first {
+    padding: 177px 0 680px;
+  }
+  .work-stages_box {
+    width: 310.436px;
+  }
+  .menu {
+    width: 290px;
+  }
+  .about_content_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_content_box,
+  .services_content_box,
+  .repair_injectors,
+  .repair_tnvd,
+  .form_box,
+  .car_brand_btn_wrap a {
+    width: 100%;
+  }
+  .our_days_item {
+    height: 337px;
+  }
+  .car_brands {
+    width: 340px;
+  }
+  .repair {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .breadcrumbs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbs a {
+    margin-bottom: 5px;
+  }
+  .breadcrumbs p {
+    margin-bottom: 5px;
+  }
+  .repair_nozzles_brand_more_details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .repair_nozzles_brand_more_details_sidebar_menu li a {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .discounts_cards_form {
+    width: 220px;
+  }
+  .discounts_cards_form h5 {
+    text-align: center;
+  }
+  .template_discounts {
+    height: 267px;
+    background-position: 0 54px;
+  }
+  .recommendations_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recommendations_item img {
+    width: 100%;
+    height: 338px;
+  }
+  .recommendations_item div h5 {
+    margin: 20px 0 15px;
+  }
+  .recommendations_item div {
+    width: 100%;
+    height: 210px;
+  }
+  .recommendation_page_img {
+    height: 390px;
+  }
+  #map {
+    height: 350px;
+  }
+  .contacts_form .form_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts_form textarea {
+    width: 100%;
+    margin: 25px 0 0;
+  }
+  .contacts_form input {
+    margin: 0 0 20px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .car_brand_imgs {
+    height: 385px;
+  }
+  .car_brand_btn_wrap {
+    margin: 70px auto 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  #first {
+    padding: 177px 0 610px;
+  }
+  .white-popup {
+    padding: 30px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 55px 15px 30px;
+  }
+  .modal_title {
+    font-size: 30px;
+  }
+  .modal_subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .modal_form label {
+    font-size: 16px;
+    margin: 20px 0 6px;
+  }
+  .modal_form input[type="submit"] {
+    margin: 25px auto 0;
+  }
+  .white-popup .mfp-close {
+    top: 6px;
+    right: 6px !important;
+  }
+}
+
+@media screen and (max-width: 589px) {
+  #first {
+    padding: 177px 0 560px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container,
+  .container-big {
+    max-width: 480px;
+  }
+  .first_title {
+    font-size: 50px;
+    width: 100%;
+  }
+  .first_subtitle {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+  .quotation p {
+    font-size: 30px;
+  }
+  .quotation span {
+    font-size: 25px;
+    margin: 25px 0 0 0;
+  }
+  .video_review {
+    height: 261px;
+  }
+  #slogan h3,
+  .second_slogan_title {
+    font-size: 60px;
+  }
+  #slogan p,
+  .second_slogan_text {
+    font-size: 35px;
+    line-height: 1.2;
+    margin: 30px auto 0;
+    width: 90%;
+  }
+  #slogan a {
+    margin: 40px auto 0;
+  }
+  #slogan {
+    padding: 100px 0 200px;
+  }
+  .footer_wrap .work_time,
+  .footer_wrap .address,
+  .footer_wrap .header_tel,
+  .footer_wrap .email,
+  .repair_nozzles_brand_btn {
+    width: 100%;
+  }
+  .footer_wrap .header_tel {
+    margin-bottom: 35px;
+  }
+  .footer_bottom_bg {
+    padding: 3px 120px 0 0;
+  }
+  #first {
+    padding: 177px 0 530px;
+  }
+  .header_tel {
+    margin-bottom: 0;
+  }
+  .header_search input {
+    width: 200px;
+  }
+  .statistics_item span {
+    font-size: 45px;
+  }
+  .auto_facts_progress_bar_title,
+  .auto_facts_progress_bar_percent {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .about_img {
+    height: 181px;
+  }
+  .about_content_box img {
+    height: 194px;
+  }
+  .our_days_item {
+    height: 278px;
+    margin-bottom: 30px;
+  }
+  .breadcrumbs_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .page_title {
+    margin: 20px 0 0;
+  }
+  #breadcrumbs {
+    padding: 108px 0 20px;
+  }
+  .our_days_item {
+    height: 217px;
+    margin-bottom: 25px;
+  }
+  .repair_injectors_content_box_video {
+    width: 100%;
+    height: 261px;
+  }
+  .repair_nozzles_brand_btn {
+    background-position: 33% 50%;
+  }
+  .repair_nozzles_brand_more_details_box table td:first-child {
+    padding-left: 15px;
+  }
+  .discounts_cards_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .discounts_cards_form {
+    width: 285px;
+    margin: 0 0 30px;
+  }
+  .recommendations_item img {
+    height: 278px;
+  }
+  .recommendations_item div {
+    height: 230px;
+  }
+  .recommendation_page_img {
+    height: 320px;
+  }
+  .car_brand_imgs {
+    height: 315px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .white-popup {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container,
+  .container-big {
+    max-width: 380px;
+  }
+  #header .header_tel {
+    display: none;
+  }
+  .header_search,
+  .video_reviews_item,
+  .video_reviews_item p,
+  .float_content_box img,
+  .float_content2,
+  .contents_img,
+  .repair_nozzles_brand_img {
+    width: 100%;
+  }
+  .header_search input {
+    width: calc(100% - 36px);
+  }
+  .logo {
+    margin-top: 15px;
+  }
+  #sandwich {
+    margin: 0 0 12px;
+  }
+  .first_subtitle {
+    width: 310px;
+    line-height: 1.2;
+  }
+  .statistics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .statistics_item {
+    width: 50%;
+    margin: 30px 0 30px;
+    padding: 0 30px;
+  }
+  .title_pattern {
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .reviews_slide {
+    width: 90%;
+  }
+  .video_review {
+    height: 203px;
+  }
+  .discount_and_consultation:before {
+    left: 30%;
+    top: 41.7%;
+  }
+  #slogan h3,
+  .second_slogan_title {
+    font-size: 50px;
+  }
+  #slogan p,
+  .second_slogan_text {
+    font-size: 30px;
+  }
+  .menu {
+    width: 250px;
+  }
+  #first {
+    padding: 177px 0 460px;
+  }
+  .repair_injectors_title {
+    font-size: 40px;
+  }
+  .repair_injectors_content_box_video {
+    height: 203px;
+  }
+  .pagination_number {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+  .pagination a {
+    margin-right: 10px;
+  }
+  .pagination_arrow_prev,
+  .pagination_arrow_next {
+    width: 10px;
+    height: 18px;
+    background-size: cover;
+  }
+  .paginate-pagination .pagination_number {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+  .paginate-pagination .pagination a {
+    margin-right: 10px;
+  }
+  .paginate-pagination .pagination_arrow_prev,
+  .paginate-pagination .pagination_arrow_next {
+    width: 10px;
+    height: 18px;
+    background-size: cover;
+  }
+  .repair_nozzles_brand_btn {
+    background-position: 29% 50%;
+  }
+  .repair_nozzles_brand_more_details_box table td,
+  .repair-tnvd tr:nth-child(2) td:nth-child(2) {
+    padding: 10px;
+  }
+  .repair-tnvd td {
+    font-size: 14px !important;
+  }
+  .repair_nozzles_brand_more_details_box table td:first-child {
+    padding-left: 10px;
+  }
+  .recommendations_item img {
+    height: 215px;
+  }
+  .recommendations_item div {
+    height: 255px;
+  }
+  .recommendation_page_img {
+    height: 245px;
+    margin: 25px 0 0;
+  }
+  .recommendation_page_text {
+    margin-top: 20px;
+  }
+  .recommendation_page_text p {
+    margin-bottom: 20px;
+  }
+  .contacts_footer_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contacts_footer {
+    background-image: url(../img/bg/bg-contacts-footer-479.jpg);
+    padding: 123px 0 19px;
+  }
+  .contacts_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work_time_item2 {
+    margin-top: 30px;
+  }
+  .contacts_wrap .header_tel .header_tel_number span {
+    margin-left: 5px;
+  }
+  .car_brand_imgs {
+    height: 245px;
+  }
+  .car_brand_list ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 30px 0 0;
+    height: auto;
+  }
+  .car_brand_list ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  #first {
+    padding: 177px 0 407px;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .container,
+  .container-big {
+    max-width: 320px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .statistics_item {
+    width: 100%;
+    margin: 40px 0 40px;
+  }
+  .statistics_item span {
+    margin: 15px 0 0;
+  }
+  .statistics_item p {
+    margin: 10px 0 0;
+  }
+  .why_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .first_title {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .consultation p,
+  .discount p {
+    width: 250px;
+  }
+  .consultation h5,
+  .discount h5 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .consultation a,
+  .discount a {
+    width: 240px;
+  }
+  #slogan h3,
+  .second_slogan_title {
+    font-size: 40px;
+  }
+  .footer_bottom_bg {
+    padding: 3px 80px 0 0;
+  }
+  .slick_prev,
+  .slick_next {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  .our_clients_slide {
+    width: 150px;
+  }
+  .first_subtitle {
+    width: 100%;
+  }
+  .video_reviews_item h5 {
+    font-size: 25px;
+  }
+  .video_review {
+    height: 168px;
+  }
+  .discount_and_consultation:before {
+    top: 40.2%;
+    left: 25%;
+  }
+  .reviews_wrap:before {
+    height: 46px;
+  }
+  .up_btn {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  .auto_facts_title:before,
+  .auto_facts_title:after {
+    width: 120px;
+  }
+  .auto_facts_progress_bar_title,
+  .auto_facts_progress_bar_percent {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .our_days_item {
+    height: 185px;
+    margin-bottom: 15px;
+  }
+  .car_brands {
+    width: 128px;
+  }
+  .repair_injectors_title,
+  .repair_tnvd_title {
+    font-size: 35px;
+  }
+  .malfunction p {
+    width: 265px;
+  }
+  .repair_injectors_content_box_video {
+    height: 174px;
+  }
+  .repair_injectors_content_box img {
+    margin: 20px 0 0 0 !important;
+  }
+  .services_content_box img {
+    margin: 20px 0 0 0 !important;
+  }
+  .breadcrumbs a,
+  .breadcrumbs p {
+    font-size: 16px;
+  }
+  .repair_nozzles_brand_more_details_box table td:first-child,
+  .repair_nozzles_brand_more_details_box table td:last-child {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .repair_nozzles_brand_btn {
+    background-position: 25% 50%;
+  }
+  .repair-tnvd td {
+    font-size: 12px !important;
+  }
+  .recommendations_item img {
+    height: 190px;
+  }
+  .recommendations_item div {
+    height: 280px;
+  }
+  .recommendations_item div h5 {
+    font-size: 25px;
+  }
+  .recommendation_page_img {
+    height: 220px;
+  }
+  .contacts_wrap .header_tel .header_tel_number span {
+    font-size: 11px;
+  }
+  .car_brand_imgs {
+    height: 211px;
+  }
+}
+
+/* Responsive end */
 /*# sourceMappingURL=main.css.map */

@@ -7,18 +7,13 @@ $(window).on("load", function () {
 // Loader end
 
 // Hamburger
-var men = true;
 $("#sandwich").click(function () {
-   if (men == false) {
-      $(".menu").slideUp();
-      men = !men;
-   } else {
-      $(".menu").slideDown();
-      men = !men;
-   }
+   $(".menu").addClass("active");
+   $("body").css("overflow", "hidden");
 });
-$("#sandwich").click(function () {
-   $("#sandwich").toggleClass("active");
+$(".menu_close_btn").click(function () {
+   $(".menu").removeClass("active");
+   $("body").css("overflow", "auto");
 });
 // Hamburger end
 
@@ -98,19 +93,21 @@ $(".our_clients_slider").slick({
    nextArrow: '<div class="slick_next"></div>',
    responsive: [
       {
-         breakpoint: 1200,
+         breakpoint: 1395,
          settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
          },
       },
       {
-         breakpoint: 600,
+         breakpoint: 992,
          settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+         },
+      },
+      {
+         breakpoint: 768,
+         settings: {
+            slidesToShow: 1,
          },
       },
    ],
@@ -118,33 +115,32 @@ $(".our_clients_slider").slick({
 // Slider "Our Clients" end
 
 // Slider "Rewiews"
-$(".reviews_slider").slick({
-   slidesToShow: 3,
-   dots: true,
-   slidesToScroll: 1,
-   centerMode: true,
-   centerPadding: "100px",
-   speed: 900,
-   prevArrow: '<div class="slick_prev"></div>',
-   nextArrow: '<div class="slick_next"></div>',
-   responsive: [
-      {
-         breakpoint: 1200,
-         settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
+$(".reviews_slider").each(function () {
+   var $this = $(this),
+      $blockArrows = $(".controls-arrows", $this),
+      $blockDots = $(".controls-dots", $this),
+      $slick = $(".reviews_slider_box", $this);
+   $slick.slick({
+      slidesToShow: 3,
+      dots: true,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: "100px",
+      speed: 500,
+      appendArrows: $blockArrows,
+      appendDots: $blockDots,
+      prevArrow: '<div class="slick_prev"></div>',
+      nextArrow: '<div class="slick_next"></div>',
+      responsive: [
+         {
+            breakpoint: 1600,
+            settings: {
+               slidesToShow: 1,
+               centerMode: false,
+            },
          },
-      },
-      {
-         breakpoint: 600,
-         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-         },
-      },
-   ],
+      ],
+   });
 });
 // Slider "Reviews" end
 
@@ -152,6 +148,7 @@ $(".reviews_slider").slick({
 $(".certificates_wrap").magnificPopup({
    delegate: "a",
    type: "image",
+   fixedContentPos: true,
    tClose: "Закрыть (Esc)",
    tLoading: "Загрузка изображения #%curr%...",
    gallery: {
@@ -170,6 +167,7 @@ $(".our_days_wrap").magnificPopup({
    delegate: ".our_days_gallery_img",
    tClose: "Закрыть (Esc)",
    type: "image",
+   fixedContentPos: true,
    tLoading: "Загрузка изображения #%curr%...",
    gallery: {
       enabled: true,
@@ -186,6 +184,7 @@ $(".our_days_wrap").magnificPopup({
 $(".popup").magnificPopup({
    type: "inline",
    tClose: "Закрыть (Esc)",
+   fixedContentPos: true,
    removalDelay: 100,
    mainClass: "my-mfp-zoom-in",
 });
@@ -194,6 +193,7 @@ $(".popup").magnificPopup({
 // Modal popup for video
 $(".popup-youtube").magnificPopup({
    type: "iframe",
+   fixedContentPos: true,
    iframe: {
       patterns: {
          youtube: {
@@ -205,10 +205,6 @@ $(".popup-youtube").magnificPopup({
    },
 });
 // Modal popup for video end
-
-// Add tag span for cars logo
-$("<span></span>").insertAfter(".car_brands_link:nth-child(8n)");
-// Add tag span for cars logo end
 
 // Tabs
 $(".tabs_menu a").click(function (e) {
