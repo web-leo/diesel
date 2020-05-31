@@ -1020,8 +1020,8 @@
   }
 
   .template_discounts {
-    height: 267px;
-    background-position: 0 54px;
+    height: 596px;
+    background-position: 0 50px;
   }
 
   .recommendations_item {
@@ -1282,6 +1282,10 @@
   .car_brand_imgs {
     height: 315px;
   }
+
+  .template_discounts {
+    height: 447px;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -1490,6 +1494,10 @@
       width: 100%;
       text-align: center;
     }
+  }
+
+  .template_discounts {
+    height: 372px;
   }
 }
 
