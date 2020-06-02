@@ -4516,6 +4516,9 @@ h2 {
   .repair_nozzles_brand_content {
     width: 480px;
   }
+  .repair_nozzles_brand_img {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 1549px) {
@@ -4542,12 +4545,24 @@ h2 {
   .repair_nozzles_brand_content {
     width: 395px;
   }
+  .template_nozzle_price_text {
+    font-size: 25px;
+  }
+  .template_nozzle_price_number {
+    font-size: 30px;
+  }
+  .template_nozzle_price_item {
+    width: 420px;
+  }
 }
 
 @media screen and (max-width: 1394px) {
   .container,
   .container-big {
     max-width: 1200px;
+  }
+  .repair_nozzles_brand_content {
+    width: 330px;
   }
   .work_time {
     margin-right: 70px;
@@ -4665,6 +4680,12 @@ h2 {
   }
   p.no_margin1316 {
     margin: 0;
+  }
+  .repair_nozzles_brand_wrap2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -4838,6 +4859,10 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .repair_nozzles_brand_wrap2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -5260,6 +5285,18 @@ h2 {
     width: 35px;
     height: 35px;
   }
+  .repair_nozzles_brand_img {
+    width: auto;
+  }
+  .repair_nozzles_brand_wrap2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .template_nozzle_price_item {
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5280,7 +5317,9 @@ h2 {
   .discount,
   .first_img,
   .repair_nozzles_brand_more_details_box,
-  .repair_nozzles_brand_more_details_sidebar {
+  .repair_nozzles_brand_more_details_sidebar,
+  .template_nozzle_price_item,
+  .template_nozzle_price_box {
     width: 100%;
   }
   .statistics_item span {
@@ -5411,6 +5450,12 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .application_table tr:first-child td {
+    font-size: 20px;
+  }
+  .application_table td {
+    font-size: 15px;
   }
 }
 
@@ -5589,6 +5634,13 @@ h2 {
   }
   .template_discounts {
     height: 447px;
+  }
+  .application_table tr:first-child td {
+    font-size: 18px;
+  }
+  .application_table td {
+    font-size: 15px;
+    padding: 10px;
   }
 }
 
@@ -5770,6 +5822,20 @@ h2 {
   .template_discounts {
     height: 372px;
   }
+  .application_wrap {
+    overflow-x: scroll;
+  }
+  .template_nozzle_price_form {
+    width: 100%;
+    padding: 17px 20px;
+  }
+  .template_nozzle_price_text,
+  .template_nozzle_price_number {
+    font-size: 20px;
+  }
+  .template_nozzle_price_item {
+    margin: 35px 0;
+  }
 }
 
 @media screen and (max-width: 419px) {
@@ -5782,8 +5848,8 @@ h2 {
   .container,
   .container-big {
     max-width: 320px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .statistics_item {
     width: 100%;
@@ -5835,9 +5901,6 @@ h2 {
   }
   .our_clients_slide {
     width: 150px;
-  }
-  .first_subtitle {
-    width: 100%;
   }
   .video_reviews_item h5 {
     font-size: 25px;
@@ -5923,6 +5986,62 @@ h2 {
   }
   .car_brand_imgs {
     height: 211px;
+  }
+  #menu:before {
+    display: none;
+  }
+  #header {
+    height: 48px;
+  }
+  #menu {
+    height: 48px;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sw_top {
+    width: 27px;
+    height: 3px;
+  }
+  .sw_bottom {
+    width: 27px;
+    height: 3px;
+    top: 6px;
+  }
+  .sw_footer {
+    width: 27px;
+    height: 3px;
+    top: 12px;
+  }
+  #sandwich {
+    margin: 0;
+  }
+  .menu_wrap {
+    padding-top: 0;
+  }
+  .first_title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 48px;
+  }
+  .logo img {
+    width: 66px;
+  }
+  #first {
+    padding: 90px 0 293px;
+  }
+  .first_subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 21px;
+  }
+  .first_btn {
+    width: 302px;
+    height: 44px;
+    margin: 47px auto 0;
+  }
+  .first_img {
+    width: 280px;
   }
 }
 
