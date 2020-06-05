@@ -110,6 +110,13 @@ $(".our_clients_slider").slick({
             slidesToShow: 1,
          },
       },
+      {
+         breakpoint: 380,
+         settings: {
+            slidesToShow: 2,
+            arrows: false,
+         },
+      },
    ],
 });
 // Slider "Our Clients" end
@@ -137,6 +144,7 @@ $(".reviews_slider").each(function () {
             settings: {
                slidesToShow: 1,
                centerMode: false,
+               adaptiveHeight: true,
             },
          },
       ],
