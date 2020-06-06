@@ -1661,6 +1661,7 @@
       color: $color;
       transition: 0.5s;
       font-family: "Oswald";
+      line-height: 1;
    }
 }
 
@@ -2470,7 +2471,6 @@
    justify-content: space-between;
 }
 
-.repair_nozzles_brand_logo,
 .repair_nozzles_brand_img {
    display: block;
    margin: auto;
@@ -2801,10 +2801,14 @@
    background-color: #eaeaea;
    margin: 75px 0;
 
-   .repair_nozzles_brand_logo,
    .repair_nozzles_brand_img {
       margin: 19px auto;
    }
+}
+
+.template_nozzle_price_box_mob,
+.template_nozzle_price_form_mob {
+   display: none;
 }
 
 .template_nozzle_price_item {

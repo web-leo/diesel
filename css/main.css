@@ -1969,6 +1969,7 @@ h2 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Oswald";
+  line-height: 1;
 }
 
 /* Bread crumbs end */
@@ -2863,7 +2864,6 @@ h2 {
           justify-content: space-between;
 }
 
-.repair_nozzles_brand_logo,
 .repair_nozzles_brand_img {
   display: block;
   margin: auto;
@@ -3235,9 +3235,13 @@ h2 {
   margin: 75px 0;
 }
 
-.template_nozzle_price_wrap .repair_nozzles_brand_logo,
 .template_nozzle_price_wrap .repair_nozzles_brand_img {
   margin: 19px auto;
+}
+
+.template_nozzle_price_box_mob,
+.template_nozzle_price_form_mob {
+  display: none;
 }
 
 .template_nozzle_price_item {
@@ -5378,10 +5382,13 @@ h2 {
         flex-wrap: wrap;
   }
   .breadcrumbs a {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .breadcrumbs p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .breadcrumbs span {
+    margin-bottom: 10px;
   }
   .repair_nozzles_brand_more_details {
     -webkit-box-orient: vertical;
@@ -5890,10 +5897,6 @@ h2 {
   .discount a {
     width: 240px;
   }
-  #slogan h3,
-  .second_slogan_title {
-    font-size: 40px;
-  }
   .footer_bottom_bg {
     padding: 10px 55px;
   }
@@ -5939,7 +5942,7 @@ h2 {
     margin-bottom: 15px;
   }
   .car_brands {
-    width: 128px;
+    width: 100%;
   }
   .repair_injectors_title,
   .repair_tnvd_title {
@@ -6271,13 +6274,15 @@ h2 {
   .discount {
     padding: 102px 20px 34px;
   }
-  #slogan h3 {
+  #slogan h3,
+  .second_slogan_title {
     font-size: 32px;
   }
   #slogan {
-    padding: 32px 0 147px;
+    padding: 32px 0 91px;
   }
-  #slogan p {
+  #slogan p,
+  .second_slogan_text {
     font-size: 18px;
     margin: 20px auto 0;
   }
@@ -6289,10 +6294,16 @@ h2 {
     background: #fc0;
   }
   #slogan:before,
-  .footer_bottom_bg:before {
+  .footer_bottom_bg:before,
+  .page_first:after,
+  .page_title,
+  #second_slogan:before,
+  .page_first2:after,
+  #second_slogan_empty:before {
     display: none;
   }
-  #slogan:after {
+  #slogan:after,
+  #second_slogan_empty:after {
     height: 48px;
   }
   .footer_wrap .work_time span {
@@ -6334,6 +6345,191 @@ h2 {
   }
   .header {
     padding: 6px 0;
+  }
+  .page_first:before,
+  .page_first2:before {
+    height: 10px;
+  }
+  #breadcrumbs {
+    padding: 0 0 35px;
+    margin: 48px 0 0;
+  }
+  .breadcrumbs {
+    margin: 7px 0 0;
+  }
+  .breadcrumbs p,
+  .breadcrumbs a {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .page_first {
+    padding: 35px 0 150px;
+  }
+  .about_text {
+    margin: 22px auto 0;
+  }
+  .repair_injectors,
+  .repair_tnvd {
+    height: 64px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .repair_injectors {
+    margin: 0 0 48px;
+  }
+  .repair_injectors_icon,
+  .repair_tnvd_icon {
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    margin: 0 20px 0 15px;
+  }
+  .repair_injectors_title,
+  .repair_tnvd_title {
+    font-size: 20px;
+  }
+  .about_content h4 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+  }
+  .services_content_box img {
+    margin: 4px 0 0 0 !important;
+  }
+  .services_content_box ul.mob_for_375 {
+    margin: 22px 0 0;
+  }
+  .mob_for_375 {
+    margin: 22px 0 0;
+  }
+  .about_content {
+    margin: 33px 0 0;
+  }
+  .page_first_title_services {
+    top: -105px;
+  }
+  .car_brands_link,
+  .car_brands_link_logo,
+  .car_brands_link_logo-hover {
+    width: 80px;
+    height: 80px;
+  }
+  .car_brands_link {
+    margin: 0 11px 44px;
+  }
+  #car_brands {
+    padding: 0 0 37px;
+  }
+  #car_brands:before {
+    top: -5px;
+    height: 10px;
+  }
+  .car_brands {
+    margin: -40px auto 0;
+    background-image: url(../img/bg/bg-pattern-for-auto-logos-375.jpg);
+  }
+  #second_slogan {
+    padding: 35px 0 87px;
+  }
+  #second_slogan:after {
+    height: 48px;
+  }
+  .page_first2 {
+    padding: 24px 0 0;
+  }
+  .template_nozzle_price_wrap {
+    margin: 23px 0 0;
+  }
+  .template_nozzle_price_wrap .repair_nozzles_brand_img {
+    width: 146px;
+    margin: 7px auto;
+  }
+  .application_table tr:first-child td {
+    font-size: 11px;
+  }
+  .application_table td {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 5px;
+  }
+  .application_title {
+    font-size: 22px;
+    text-transform: none;
+  }
+  .template_nozzle_price_box_desc,
+  .template_nozzle_price_form_desc {
+    display: none;
+  }
+  .template_nozzle_price_box_mob,
+  .template_nozzle_price_form_mob {
+    display: block;
+  }
+  .template_nozzle_price_form_mob {
+    margin: 47px 0 0;
+  }
+  .template_nozzle_price_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .template_nozzle_price_text {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .template_nozzle_price_text,
+  .template_nozzle_price_number {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .template_nozzle_price_number {
+    margin: 5px 0;
+  }
+  .template_nozzle_price_box_mob {
+    background-color: #f5f5f5;
+    padding: 18px 0 25px;
+  }
+  .characteristics_title {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  #characteristics {
+    padding: 47px 0 45px;
+  }
+  .catalog_number {
+    font-weight: 400;
+    margin-top: 22px;
+  }
+  .original_numbers_title {
+    margin-top: 28px;
+  }
+  .application_wrap {
+    background-color: #fff;
+    padding: 0;
+  }
+  .application_table {
+    width: 100%;
+    margin: 23px auto 0;
+  }
+  #application {
+    padding: 0;
+  }
+  #second_slogan_empty {
+    padding: 96px 0 0;
   }
 }
 
