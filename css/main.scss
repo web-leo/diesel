@@ -1887,6 +1887,10 @@
    &:hover span {
       opacity: 1;
    }
+
+   &:hover .our_days_item_link {
+      color: #fff;
+   }
 }
 
 .our_days_item_link_box {
@@ -2541,6 +2545,10 @@
          }
       }
    }
+}
+
+.table_for375 {
+   display: none;
 }
 
 .repair_nozzles_brand_more_details_sidebar {
