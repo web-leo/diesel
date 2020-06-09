@@ -4462,6 +4462,24 @@ h2 {
   background-image: url(../img/repair/repair-tnvd-hover.svg);
 }
 
+#page404 {
+  background-color: #fc0;
+  padding: 152px 0 78px;
+}
+
+.page404_title {
+  font-size: 76px;
+  line-height: 81px;
+  text-align: center;
+}
+
+.page404_error {
+  font-size: 252px;
+  line-height: 267px;
+  text-align: center;
+  margin: 64px 0 0;
+}
+
 /* Car brand page end */
 /* Responsive */
 @media screen and (max-width: 1864px) {
@@ -5872,6 +5890,18 @@ h2 {
   .template_nozzle_price_item {
     margin: 35px 0;
   }
+  .page404_title {
+    font-size: 50px;
+    line-height: 56px;
+  }
+  .page404_error {
+    font-size: 120px;
+    line-height: 1.3;
+    margin: 0;
+  }
+  #page404 {
+    padding: 152px 0 50px;
+  }
 }
 
 @media screen and (max-width: 419px) {
@@ -6013,7 +6043,8 @@ h2 {
     font-size: 11px;
   }
   .car_brand_imgs {
-    height: 211px;
+    height: 218px;
+    margin: 27px 0 0;
   }
   #menu:before {
     display: none;
@@ -6354,7 +6385,7 @@ h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 23px auto 0;
+    margin: 74px auto 0;
   }
   .copyright {
     font-size: 16px;
@@ -6754,7 +6785,8 @@ h2 {
   #auto_facts,
   .prices_table1,
   .prices_table2,
-  .prices_table3 {
+  .prices_table3,
+  .car_brand_page_line {
     display: none;
   }
   .prices_box h5 {
@@ -6958,7 +6990,8 @@ h2 {
   .second_slogan_empty_recom {
     padding: 38px 0 0 !important;
   }
-  .recommendation_page_menu {
+  .recommendation_page_menu,
+  .contacts_item_title {
     display: none;
   }
   .recommendation_title {
@@ -6990,6 +7023,202 @@ h2 {
   }
   .second_slogan_empty_recom2 {
     padding: 88px 0 0 !important;
+  }
+  .section_for375 {
+    padding: 23px 0 15px;
+  }
+  #map {
+    height: 300px;
+  }
+  .contacts_wrap .work_time span {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    margin-right: 44px;
+  }
+  .contacts_wrap .address a {
+    margin: 0 51px 0 7px;
+  }
+  .contacts_wrap .header_tel_icon {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    margin-right: 44px;
+  }
+  .contacts_wrap .work_time p,
+  .contacts_wrap .address p,
+  .contacts_wrap .header_tel_number,
+  .contacts_wrap .email_address {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .contacts_wrap .address a {
+    width: 22px;
+    height: 35px;
+  }
+  .contacts_wrap .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+  }
+  .contacts_wrap .email_icon {
+    width: 44px;
+    height: 35px;
+    margin-right: 35px;
+    background-image: url("../img/icons/email.svg");
+    background-size: cover;
+  }
+  .contacts_wrap .email_address {
+    font-family: 'PTSans';
+    color: #333;
+  }
+  .contacts_wrap .header_tel_number span {
+    display: none;
+  }
+  #contacts .contacts_form {
+    display: none;
+  }
+  .contacts_page_btn_mob {
+    width: 100%;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #030303;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fc0;
+    margin: 41px 0 0;
+    position: relative;
+  }
+  .contacts_page_btn_mob:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+  }
+  #contacts_footer {
+    display: none;
+  }
+  .car_brand_page_line {
+    margin: 25px 0;
+  }
+  .car_brand_list h5 {
+    font-size: 18px;
+  }
+  .car_brand_list ul {
+    margin: 26px 0 0;
+  }
+  .car_brand_list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px 0 0;
+    height: 380px;
+    width: 300px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .car_brand_list ul li {
+    width: auto;
+  }
+  .page_first_title:before {
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+  }
+  .car_brand_btn_wrap a {
+    height: 64px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .car_brand_btn_wrap a:first-child {
+    margin-bottom: 47px;
+  }
+  .car_brand_btn_wrap a:last-child {
+    margin-bottom: 47px;
+  }
+  .car_brand_btn_wrap a:first-child span {
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    margin: 0 20px 0 15px;
+  }
+  .car_brand_btn_wrap a:last-child span {
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    margin: 0 20px 0 15px;
+  }
+  .car_brand_btn_wrap a:first-child h5 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .car_brand_btn_wrap a:last-child h5 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .car_brand_btn_wrap {
+    margin: 41px auto 0;
+  }
+  .modal_title {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .modal_subtitle {
+    line-height: 27px;
+    margin: 10px 0 0;
+  }
+  .modal_form input {
+    height: 36px;
+  }
+  .modal_form textarea {
+    height: 120px;
+  }
+  .modal_form input[type="submit"] {
+    width: 146px;
+  }
+  .white-popup {
+    width: 310px;
+  }
+  .discounts_cards_box a img {
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.24);
+  }
+  .page404_title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .page404_error {
+    font-size: 70px;
+    line-height: 1.3;
+  }
+  #page404 {
+    padding: 85px 0 35px;
   }
 }
 

@@ -3931,6 +3931,24 @@
    }
 }
 
+#page404 {
+   background-color: $color;
+   padding: 152px 0 78px;
+}
+
+.page404_title {
+   font-size: 76px;
+   line-height: 81px;
+   text-align: center;
+}
+
+.page404_error {
+   font-size: 252px;
+   line-height: 267px;
+   text-align: center;
+   margin: 64px 0 0;
+}
+
 /* Car brand page end */
 
 @import "_media.scss";
