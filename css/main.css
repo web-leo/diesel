@@ -2942,6 +2942,7 @@ h2 {
 
 .table_for375,
 .table_for_375,
+.table_for_375-2,
 .none_desc {
   display: none;
 }
@@ -6200,6 +6201,8 @@ h2 {
   .work-stages_wrap {
     margin: 5px 0 0;
     padding: 32px 0 19px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(113, 113, 113, 0.35)), to(rgba(113, 113, 113, 0.35))), url(../img/bg/bg-work-stages-375.jpg);
+    background-image: linear-gradient(rgba(113, 113, 113, 0.35), rgba(113, 113, 113, 0.35)), url(../img/bg/bg-work-stages-375.jpg);
   }
   .work-stages_wrap:before {
     top: -7px;
@@ -6404,7 +6407,7 @@ h2 {
     height: 10px;
   }
   #breadcrumbs {
-    padding: 0 0 35px;
+    padding: 0;
     margin: 48px 0 0;
   }
   .breadcrumbs {
@@ -6454,7 +6457,12 @@ h2 {
     width: 44px;
     height: 44px;
     background-size: cover;
-    margin: 0 20px 0 15px;
+  }
+  .repair_injectors_icon {
+    margin: 0 30px 0 15px;
+  }
+  .repair_tnvd_icon {
+    margin: 0 51px 0 15px;
   }
   .repair_injectors_title,
   .repair_tnvd_title {
@@ -6628,6 +6636,7 @@ h2 {
     background: #fc0;
     margin: 48px auto 0;
     height: 44px;
+    width: 250px;
   }
   .repair_nozzles_brand_more_details_sidebar_menu li a {
     font-size: 18px;
@@ -7081,7 +7090,7 @@ h2 {
   }
   .contacts_page_btn_mob {
     width: 100%;
-    height: 32px;
+    height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7138,6 +7147,7 @@ h2 {
     width: 40%;
     height: 1px;
     bottom: 0;
+    display: none;
   }
   .car_brand_btn_wrap a {
     height: 64px;
@@ -7219,6 +7229,12 @@ h2 {
   }
   #page404 {
     padding: 85px 0 35px;
+  }
+  .certificates_gallery_arrows-left:hover {
+    background-image: url(../img/certificate-cover/arrow-prev.svg);
+  }
+  .certificates_gallery_arrows-right:hover {
+    background-image: url(../img/certificate-cover/arrow-next.svg);
   }
 }
 
